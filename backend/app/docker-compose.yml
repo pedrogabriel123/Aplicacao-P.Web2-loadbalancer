@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+
+  api:
+    build: .
+    container_name: censo_api
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
